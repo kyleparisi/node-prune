@@ -122,7 +122,7 @@ type Option func(*Pruner)
 // New with the given options.
 func New(options ...Option) *Pruner {
 	v := &Pruner{
-		dir:   "node_modules",
+		dir:   "vendor",
 		log:   log.Log,
 		exts:  toMap(DefaultExtensions),
 		dirs:  toMap(DefaultDirectories),
