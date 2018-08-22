@@ -7,7 +7,7 @@ node-prune is a small tool to prune unnecessary files from ./node_modules, such 
 ## Installation
 
 ```
-$ go get github.com/tj/node-prune/cmd/node-prune
+$ go get github.com/kyleparisi/vendor-prune/cmd/vendor-prune
 ```
 
 ## Usage
@@ -15,7 +15,7 @@ $ go get github.com/tj/node-prune/cmd/node-prune
 In your app directory:
 
 ```
-$ node-prune
+$ vendor-prune
 
 files total 27,330
 files removed 3,990
@@ -26,7 +26,7 @@ size removed 13 MB
 Somewhere else:
 
 ```
-$ node-prune path/to/node_modules
+$ vendor-prune path/to/vendor
 
 files total 27,330
 files removed 3,990
@@ -38,7 +38,7 @@ Or add to the ``package.json`` scripts field
 
 ```
   "scripts": {
-    "postinstall": "node-prune"
+    "postinstall": "vendor-prune"
   }
 ```
 
